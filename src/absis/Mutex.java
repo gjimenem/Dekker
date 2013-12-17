@@ -27,6 +27,15 @@ public class Mutex {
 	}
 
 	protected void surt_zc() {
+		if(((Proces)Thread.currentThread()).id==0) {		
+			enter0=false;
+			turn=1;
+		}
+		else {
+			enter1=false;
+			turn=0;
+		}
+		
 		
 	}
 
