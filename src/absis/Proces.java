@@ -17,12 +17,12 @@ public class Proces {
 		  int aux=0; 
 	          for(int i = 0; i < N; i++){  
 		     // protocol d'entrada a la Zona Crítica
-	             //m.entra_zc();
+	             m.entra_zc();
 				 //aux=comptador.get_valor();
 	   			 aux++;
 	  			 //comptador.set_valor(aux);
 		    // protocol de sortida de la Zona Crítica
-	            //m.surt_zc();   
+	            m.surt_zc();   
 	          }  
 	  }  
 
