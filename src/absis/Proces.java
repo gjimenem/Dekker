@@ -18,9 +18,9 @@ public class Proces {
 	          for(int i = 0; i < N; i++){  
 		     // protocol d'entrada a la Zona Crítica
 	             m.entra_zc();
-				 //aux=comptador.get_valor();
+				 aux=comptador.get_valor();
 	   			 aux++;
-	  			 //comptador.set_valor(aux);
+	  			 comptador.set_valor(aux);
 		    // protocol de sortida de la Zona Crítica
 	            m.surt_zc();   
 	          }  
