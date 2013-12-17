@@ -10,16 +10,17 @@ public class Principal {
 		    
 		    for(int i = 0; i < M; i++) {
 				processos[i] = new Proces(comptador, m, i); // crea el proces ièsim
-				//processos[i].start(); // i l'arrenca
+				processos[i].start(); // i l'arrenca
 			}
 		 
 		    for (int i = 0; i < M; i++) {  
-		      //try{  
-		        //processos[i].join(); //Espera la finalització del proces ièsim  
-		      //}catch(InterruptedException e){}  
+		      try{  
+		        processos[i].join(); //Espera la finalització del proces ièsim  
+		      }catch(InterruptedException e){}  
 		    }  
 		 
-		    System.out.println("El resultat final és = " + comptador.get_valor());   
+		    System.out.println("El resultat final és = " + comptador.get_valor());
+		    
 	 }
 	
 }

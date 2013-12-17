@@ -10,7 +10,6 @@ public class Inter {
 	  public void set_valor(int valor){  
 		  v=valor;
 	  }  
-	 
 	  public int get_valor(){  
 	    return v;  
 	  }  

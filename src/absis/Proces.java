@@ -1,6 +1,6 @@
 package absis;
 
-public class Proces {
+public class Proces extends Thread{
 	
 	  private Inter comptador;
 	  public int id;
